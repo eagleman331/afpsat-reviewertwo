@@ -3,7 +3,6 @@
     "name": "afpsat-reviewertwo",
     "slug": "afpsat-reviewertwo",
     "version": "1.0.0",
-
     "scheme": "afpsat-reviewertwo",
     "web": {
       "bundler": "metro",
@@ -21,28 +20,34 @@
     ],
     "experiments": {
       "typedRoutes": true,
-
       "tsconfigPaths": true
     },
-
     "orientation": "portrait",
     "icon": "./assets/icon.png",
-
     "userInterfaceStyle": "light",
-
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
-    "assetBundlePatterns": ["**/*"],
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.eagleman33.afpsatreviewertwo"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
+      },
+      "package": "com.eagleman33.afpsatreviewertwo"
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "4b79dd92-b0fd-4aaa-a781-7615a3663c0a"
       }
     }
   }
