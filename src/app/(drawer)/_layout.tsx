@@ -12,6 +12,7 @@ const DrawerLayout = () => {
         options={{
           headerTitle: 'Home',
           drawerLabel: 'Home',
+          headerShown: false,
           drawerIcon: ({ size, color }) => (
             <Ionicons name="home-outline" size={size} color={color} />
           ),
@@ -22,14 +23,15 @@ const DrawerLayout = () => {
         options={{
           headerTitle: 'Tabs',
           drawerLabel: 'Tabs',
+          headerShown: false,
           drawerIcon: ({ size, color }) => (
             <MaterialIcons name="border-bottom" size={size} color={color} />
           ),
-          headerRight: () => (
-            <Link href="/modal" asChild>
-              <HeaderButton />
-            </Link>
-          ),
+          // headerRight: () => (
+          //   <Link href="/modal" asChild>
+          //     <HeaderButton />
+          //   </Link>
+          // ),
         }}
       />
     </Drawer>

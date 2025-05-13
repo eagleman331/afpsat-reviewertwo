@@ -1,15 +1,7 @@
-import { Stack } from 'expo-router';
-
-import { Container } from '~/src/components/Container';
-import { ScreenContent } from '~/src/components/ScreenContent';
+import { Redirect, Stack } from 'expo-router';
 
 export default function Home() {
   return (
-    <>
-      <Stack.Screen options={{ title: 'Home' }} />
-      <Container>
-        <ScreenContent path="app/(drawer)/index.tsx" title="Home" />
-      </Container>
-    </>
+       <Redirect href="/(drawer)/(tabs)/(home)/HomeScreen" />
   );
 }
