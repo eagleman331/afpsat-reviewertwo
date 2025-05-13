@@ -7,9 +7,8 @@ import { collection, getDocs } from 'firebase/firestore';
 import { db } from '../../../../utils/firebase';
 
 const { width, height } = Dimensions.get('window');
-const RecruitHome = ({ navigation }) => {
+const RecruitHome = ( ) => {
   const [data, setData] = useState([]);
-  const [loaded, setLoaded] = useState(false);
 
   useEffect(() => {
     const fetchData = async () => {
