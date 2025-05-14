@@ -5,6 +5,7 @@ import { TouchableOpacity } from 'react-native';
 import Colors from '../../../../assets/constant/Colors';
 import { collection, getDocs } from 'firebase/firestore';
 import { db } from '../../../../utils/firebase';
+import { router } from 'expo-router';
 
 const { width, height } = Dimensions.get('window');
 const RecruitHome = ( ) => {
@@ -39,7 +40,9 @@ const RecruitHome = ( ) => {
             var imageFB = item.data.facebookPic;
             console.log('item', item);
             return (
-              <TouchableOpacity key={index}>
+              <TouchableOpacity key={index}
+              // onPress={()=> router.push('RecruitDetails')}
+              >
                 <View>
                   <View
                     style={{

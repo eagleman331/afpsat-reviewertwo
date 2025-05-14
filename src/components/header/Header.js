@@ -1,5 +1,5 @@
 import React, { useContext, useLayoutEffect } from 'react';
-import { View, TouchableOpacity, Dimensions } from 'react-native';
+import { View, TouchableOpacity, Dimensions, BackHandler } from 'react-native';
 import Colors from '../../assets/constant/Colors';
 const { width, height } = Dimensions.get('window');
 // import { AuthContext } from "../../context/AuthContext";
@@ -39,7 +39,9 @@ const Header = () => {
           <Entypo name="menu" size={40} color={Colors.gold} />
         </View>
       </TouchableOpacity>
-      <TouchableOpacity>
+      <TouchableOpacity 
+      onPress={() => BackHandler.exitApp()}
+      >
         <View>
           <Entypo name="log-out" size={30} color={Colors.gold} />
         </View>
