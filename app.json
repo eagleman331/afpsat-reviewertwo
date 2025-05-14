@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "afpsat-reviewertwo",
+    "name": "Security-ForcesExam 2",
     "slug": "afpsat-reviewertwo",
     "version": "1.0.0",
     "scheme": "afpsat-reviewertwo",
@@ -24,7 +24,7 @@
       "tsconfigPaths": true
     },
     "orientation": "portrait",
-    "icon": "./src/assets/icon.png",
+    "icon": "./src/assets/logo/afpsatIcon.png",
     "userInterfaceStyle": "light",
     "splash": {
       "image": "./src/assets/splash.png",
@@ -40,7 +40,7 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./src/assets/adaptive-icon.png",
+        "foregroundImage": "./src/assets/logo/afpsatIcon.png",
         "backgroundColor": "#ffffff"
       },
       "package": "com.eagleman33.afpsatreviewertwo"

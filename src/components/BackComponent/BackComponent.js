@@ -3,13 +3,14 @@ import {
   View,
   Dimensions,
   BackHandler,
+  TouchableOpacity,
 } from 'react-native';
 import Colors from '../../assets/constant/Colors';
 import { useRouter } from 'expo-router';
 
 const { width, height } = Dimensions.get('window');
-import { Entypo } from '@expo/vector-icons';
-import { Icon } from '@rneui/themed';
+// import { Entypo } from '@expo/vector-icons';
+// import { Icon } from '@rneui/themed';
 
 const BackComponent = () => {
   const router = useRouter();
