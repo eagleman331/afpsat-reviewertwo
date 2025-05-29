@@ -2,6 +2,7 @@ import { FontAwesome5 } from '@expo/vector-icons';
 import { Tabs } from 'expo-router';
 import { TabBarIcon } from '~/src/components/TabBarIcon';
 import MaterialCommunityIcons from '@expo/vector-icons/MaterialCommunityIcons';
+import Entypo from '@expo/vector-icons/Entypo';
 
 export default function TabLayout() {
   return (
@@ -18,6 +19,16 @@ export default function TabLayout() {
           tabBarIcon: ({ color }) => <FontAwesome5 name="campground" size={24} color="black" />,
         }}
       />
+         <Tabs.Screen
+        name="(exam)"
+        options={{
+          title: 'Exam',
+          headerShown: false,
+          tabBarIcon: ({ color }) => (
+            <Entypo name="open-book" size={24} color="black" />
+          ),
+        }}
+      />   
       <Tabs.Screen
         name="(recruit)"
         options={{
