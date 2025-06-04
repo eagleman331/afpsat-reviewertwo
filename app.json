@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "Security-ForcesExam 2",
+    "name": "AFPSAT Practice Exam",
     "slug": "afpsat-reviewertwo",
     "version": "1.0.0",
     "scheme": "afpsat-reviewertwo",
@@ -24,10 +24,10 @@
       "tsconfigPaths": true
     },
     "orientation": "portrait",
-    "icon": "./src/assets/logo/afpsatIcon.png",
+    "icon": "./src/assets/logo/AFPSATpracticeExamIcon.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./src/assets/splash.png",
+      "image": "./src/assets/logo/AFPSATpracticeExamIcon.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -40,7 +40,7 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./src/assets/logo/afpsatIcon.png",
+        "foregroundImage": "./src/assets/logo/AFPSATpracticeExamIcon.png",
         "backgroundColor": "#ffffff"
       },
       "package": "com.eagleman33.afpsatreviewertwo"

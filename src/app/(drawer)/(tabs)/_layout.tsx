@@ -11,7 +11,7 @@ export default function TabLayout() {
         headerShown: false,
         tabBarActiveTintColor: 'black',
       }}>
-      <Tabs.Screen
+        <Tabs.Screen
         name="(home)"
         options={{
           title: 'Home',
@@ -19,7 +19,7 @@ export default function TabLayout() {
           tabBarIcon: ({ color }) => <FontAwesome5 name="campground" size={24} color="black" />,
         }}
       />
-         <Tabs.Screen
+        <Tabs.Screen
         name="(exam)"
         options={{
           title: 'Exam',
@@ -29,6 +29,8 @@ export default function TabLayout() {
           ),
         }}
       />   
+      
+         
       <Tabs.Screen
         name="(recruit)"
         options={{
